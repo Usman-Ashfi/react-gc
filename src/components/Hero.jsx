@@ -1,6 +1,8 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
+  var lk = "ali";
   return (
     <section>
       <div className="dark:bg-violet-400">
@@ -13,12 +15,13 @@ const Hero = () => {
             ab amet vero eaque explicabo!
           </p>
           <div className="flex flex-wrap justify-center">
-            <button
+            <Link
+              href={`about/${lk}`}
               type="button"
               className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-800 dark:text-gray-50"
             >
               Get started
-            </button>
+            </Link>
             <button
               type="button"
               className="px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900"
