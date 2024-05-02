@@ -1,18 +1,13 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Loading from "@/components/Loading";
-import Hero from "@/components/Hero";
+import Video from "@/components/Video";
 
 const page = () => {
-  const [loader, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
-
-  return <div>{loader ? <Loading /> : <Hero />}</div>;
+  return (
+    <div className="flex justify-center items-center">
+      <div className="w-[600px]">
+        <Video />
+      </div>
+    </div>
+  );
 };
 
 export default page;
